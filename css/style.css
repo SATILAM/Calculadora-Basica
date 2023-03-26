@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+}
+
+body {
+	background-color: #000000;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	margin: 100px;
+}
+
+.calculadora {
+	position: center;
+	border: 5px solid #ffffff;
+	border-radius: 3px;
+	background-color: rgb(56, 56, 75);
+	padding: 5px;
+}
+
+button {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #000000;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 5.7px;
+	padding: 10px;
+	width: 50px;
+	justify-content: space-around;
+}
+
+button:hover {
+	background-color: #ccc;
+	color: #fff;
+}
+
+#btnAdicao {
+	height: 50px;
+}
+
+#resultado {
+	background-color: #f9f9f9;
+	border: none;
+	font-size: 25px;
+	height: 50px;
+    width: 39.7vh;
+}
+
+/*#### MEDIA QUERIES ############*/
+@media screen and (min-width: 820px) and (max-width: 1240px) {
+body {
+    margin: 50px;
+}
+	
+.calculadora {
+    max-width: 800px;
+    margin: 0 auto;
+}
+	
+#resultado {
+    width: 30vw;
+}
+	
+button {
+    font-size: 14px;
+    width: 40px;
+    margin: 5px;
+}
+	
+#btnAdicao {
+    height: 40px;
+ }
+}
+
+@media screen and (max-width: 1320px) and (min-width: 740px) {
+body {
+    margin: 10%;
+}
+  
+.calculadora {
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+  
+#resultado {
+    width: 11vw;
+    font-size: 20px;
+    height: 40px;
+}
+  
+button {
+    font-size: 14px;
+    width: 35px;
+    margin: 3px;
+    padding: 8px;
+}
+  
+#btnAdicao {
+    height: 40px;
+  }
+}
